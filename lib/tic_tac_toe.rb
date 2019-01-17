@@ -54,7 +54,7 @@ class TicTacToe
     if valid_move?(index)
       player = self.current_player
       self.move(index, player)
-      self.display_board(board)
+      self.display_board
     else
       puts('invalid')
       turn(board)
