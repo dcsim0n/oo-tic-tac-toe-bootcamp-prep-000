@@ -49,12 +49,12 @@ class TicTacToe
   end
   def turn
     input = gets.strip
-    index = self.input_to_index(input)
+    index = input_to_index(input)
   
     if valid_move?(index)
-      player = self.current_player
-      self.move(index, player)
-      self.display_board
+      player = current_player
+      move(index, player)
+      display_board
     else
       puts('invalid')
       turn(board)
