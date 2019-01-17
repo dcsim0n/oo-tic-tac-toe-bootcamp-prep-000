@@ -18,3 +18,6 @@ class TicTacToe
     [2,4,6]
     ].freeze
   end
+  
+  def display_board
+    
