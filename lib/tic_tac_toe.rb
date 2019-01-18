@@ -60,4 +60,16 @@ class TicTacToe
       puts('invalid')
       turn(board)
     end
+  end
+  
+  def won?(board) 
+    wins = WIN_COMBINATIONS.detect do |win_combo|
+    board_combo = get_board_combo(board, win_combo)
+    if board_combo == ['X','X','X']
+      board_combo
+    elsif board_combo == ['O','O','O']
+      board_combo
+    end
+  end
+end
 end
